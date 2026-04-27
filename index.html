@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karnika V T | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f8fafc;color:#0f172a;scroll-behavior:smooth;}
+section{padding:80px 10%;}
+
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);z-index:1000;border-bottom:1px solid #e2e8f0;}
+nav h1{color:#2563eb;}
+nav ul{display:flex;gap:20px;list-style:none;align-items:center;}
+nav a{text-decoration:none;color:#0f172a;transition:.3s;}
+nav a:hover{color:#2563eb;}
+.resume-btn{padding:8px 18px;background:#2563eb;color:white;border-radius:20px;font-weight:600;}
+
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#ffffff,#e0f2fe);} 
+.hero h2{font-size:3rem;}
+.hero span{color:#2563eb;}
+.hero p{margin:20px 0;max-width:700px;}
+.hero button{padding:12px 25px;border:none;border-radius:25px;background:#2563eb;color:white;font-weight:600;cursor:pointer;transition:.3s;margin:10px;}
+.hero button:hover{transform:scale(1.05);} 
+
+.card{background:#ffffff;border-radius:15px;padding:25px;transition:.3s;box-shadow:0 10px 25px rgba(0,0,0,0.1);} 
+.card:hover{transform:translateY(-8px);} 
+
+.grid{display:grid;gap:20px;}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+
+.title{text-align:center;margin-bottom:40px;}
+.title h2{font-size:2rem;color:#2563eb;}
+
+.skill{background:#e2e8f0;border-radius:10px;padding:12px;}
+.skill-bar{height:8px;background:#cbd5f5;border-radius:10px;margin-top:5px;overflow:hidden;}
+.skill-bar span{display:block;height:100%;background:#2563eb;animation:load 2s ease;}
+@keyframes load{from{width:0;}}
+
+.contact a{color:#2563eb;text-decoration:none;}
+footer{text-align:center;padding:20px;background:#e2e8f0;}
+
+@media(max-width:768px){.hero h2{font-size:2rem;}}
+</style>
+</head>
+<body>
+
+<nav>
+<h1>Karnika</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#colleges">Colleges Handled</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="Karnika_Resume.pdf" class="resume-btn" target="_blank">Resume</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h2>Hi, I'm <span>Karnika V T</span></h2>
+<p>Result-oriented Technical Trainer with 2+ years of experience empowering students with strong problem-solving, coding, and analytical skills through structured and engaging training programs.</p>
+</section>
+
+<section id="about">
+<div class="title"><h2>About Me</h2></div>
+<div class="card">
+<p>I am a passionate Technical Trainer dedicated to transforming students into confident problem-solvers. With hands-on experience training over 1500+ students, I specialize in delivering simplified explanations of complex concepts in Java, DSA, and core programming.</p>
+<br>
+<p>My teaching approach focuses on real-world problem solving, interactive coding sessions, and continuous assessment to ensure measurable improvement in student performance. I actively mentor students for placements, helping them crack coding interviews and build strong technical foundations.</p>
+</div>
+</section>
+
+<section id="skills">
+<div class="title"><h2>Skills</h2></div>
+<div class="grid grid-3">
+<div class="skill">Java (Core + Advanced)<div class="skill-bar"><span style="width:90%"></span></div></div>
+<div class="skill">Data Structures & Algorithms<div class="skill-bar"><span style="width:88%"></span></div></div>
+<div class="skill">SQL & Database Concepts<div class="skill-bar"><span style="width:80%"></span></div></div>
+<div class="skill">Python Programming<div class="skill-bar"><span style="width:75%"></span></div></div>
+<div class="skill">Problem Solving & Logical Thinking<div class="skill-bar"><span style="width:92%"></span></div></div>
+<div class="skill">Technical Training & Mentorship<div class="skill-bar"><span style="width:95%"></span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<div class="title"><h2>Experience</h2></div>
+<div class="card">
+<h3>Technical Trainer - LeSuccess</h3>
+<ul>
+<li>Trained 1500+ students across 5+ colleges</li>
+<li>Boosted problem-solving efficiency</li>
+<li>Conducted live coding sessions</li>
+<li>Mentored students for placements</li>
+</ul>
+</div>
+</section>
+
+<section id="colleges">
+<div class="title"><h2>Colleges Trained</h2></div>
+<div class="grid grid-3">
+<div class="card">PSR College of Engineering, Sivakasi</div>
+<div class="card">Dr. NGP Institute of Technology, Coimbatore</div>
+<div class="card">KPR Arts and Science College, Coimbatore</div>
+<div class="card">PSNA Engineering and Technology, Dindigul</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="title"><h2>Contact</h2></div>
+<div class="card contact">
+<p>Email: <a href="mailto:karnikavt@gmail.com">karnikavt@gmail.com</a></p>
+<p>Phone: 6379694763</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/karnika-v-t-a78493376">View Profile</a></p>
+<p>GitHub: <a href="#">View Projects</a></p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Karnika V T | Portfolio</p>
+</footer>
+
+</body>
+</html>
